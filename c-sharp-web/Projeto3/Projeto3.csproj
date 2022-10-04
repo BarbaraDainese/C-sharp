@@ -43,10 +43,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DataServices">
+      <HintPath>..\..\Bibliotecas\DataServices.dll</HintPath>
+    </Reference>
     <Reference Include="LogExcecoes">
       <HintPath>..\..\Bibliotecas\LogExcecoes\bin\Debug\LogExcecoes.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\Bibliotecas\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.web">
+      <HintPath>..\..\Bibliotecas\mysql.web.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,6 +79,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ADS2022T.accdb" />
     <Content Include="css\Projeto.css" />
     <Content Include="css\StyleSheet.css" />
     <Content Include="Default.aspx" />
@@ -104,9 +114,11 @@
     <Content Include="js\flexslider.css" />
     <Content Include="js\flexslider.min.js" />
     <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="Representantes.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Representantes.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -136,6 +148,13 @@
       <DependentUpon>Page.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Representantes.aspx.cs">
+      <DependentUpon>Representantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Representantes.aspx.designer.cs">
+      <DependentUpon>Representantes.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="js\flexslider-icon.eot" />
@@ -160,6 +179,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

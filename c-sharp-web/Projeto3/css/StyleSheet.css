@@ -87,6 +87,7 @@ body {
 
 .box{
     padding:20px;
+    min-height:500px;
 }
 
 .border{
