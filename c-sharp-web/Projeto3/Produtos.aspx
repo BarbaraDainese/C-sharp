@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Page.Master" AutoEventWireup="true" CodeBehind="Representantes.aspx.cs" Inherits="Projeto3.Representantes" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Page.Master" AutoEventWireup="true" CodeBehind="Produtos.aspx.cs" Inherits="Projeto3.Produtos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row margin-top-60">
+     <div class="row margin-top-60">
         <div class="col-6">
             <div class="box border margin-right-20">
                 <h2>Cadastro de representante</h2>
@@ -15,14 +15,11 @@
                 <label>NOME</label>
                 <asp:TextBox ID="Nome" MaxLength="255" runat="server"></asp:TextBox>
 
-                <label>E-MAIL</label>
+                <label>CATEGORIA</label>
                 <asp:TextBox ID="Email" MaxLenght="255" runat="server"></asp:TextBox>
 
-                <label>NOME DE ACESSO</label>
+                <label>PREÇO</label>
                 <asp:TextBox ID="NomeAcesso" runat="server"></asp:TextBox>
-
-                <label>SENHA</label>
-                <asp:TextBox ID="Senha" MaxLength="255" runat="server"></asp:TextBox>
 
                 <asp:Button ID="Inserir" OnClick="Inserir_Click" runat="server" Text="Inserir" />
                 <asp:Button ID="Excluir" OnClick="Excluir_Click" visible="false" runat="server" Text="Excluir" />
@@ -30,9 +27,9 @@
         </div>
         <div class ="col-6">
             <div class="box border">
-                <asp:GridView ID="ExibirRepresentantes" AutoGenerateColumns="true" OnSelectedIndexChanged="ExibirRepresentantes_SelectedIndexChanged" width="100%" AutoGenerateSelectButton="true" CellPadding="8" BorderColor="#c0" runat="server">
-                </asp:GridView>
+                <asp:GridView ID="ExibirRepresentantes" runat="server"></asp:GridView>
             </div>
+            
         </div>
     </div>
 </asp:Content>
