@@ -49,6 +49,33 @@ namespace Projeto3 {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor Excecoes;
         
         /// <summary>
+        /// Controle representantes.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor representantes;
+        
+        /// <summary>
+        /// Controle Entrar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor Entrar;
+        
+        /// <summary>
+        /// Controle Sair.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor Sair;
+        
+        /// <summary>
         /// Controle ContentPlaceHolder1.
         /// </summary>
         /// <remarks>

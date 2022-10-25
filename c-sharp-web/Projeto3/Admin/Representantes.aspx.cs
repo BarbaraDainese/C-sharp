@@ -15,7 +15,12 @@ namespace Projeto3 {
         DataServices.DataBase.DAO db = new DataServices.DataBase.DAO();
 
         protected void Page_Load(object sender, EventArgs e) {
-            LoadGrid();
+
+            if (!IsPostBack)
+            {
+                LoadGrid();
+            }
+            
         }
 
         protected void Inserir_Click(object sender, EventArgs e) {

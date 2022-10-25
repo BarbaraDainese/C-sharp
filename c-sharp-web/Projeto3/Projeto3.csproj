@@ -84,7 +84,7 @@
     <Content Include="css\StyleSheet.css" />
     <Content Include="Default.aspx" />
     <Content Include="Erros.txt" />
-    <Content Include="ExibirExcecoes.aspx" />
+    <Content Include="Admin\ExibirExcecoes.aspx" />
     <Content Include="FaleConosco.aspx" />
     <Content Include="images\aluno.png" />
     <Content Include="images\banner0.png" />
@@ -114,8 +114,10 @@
     <Content Include="js\flexslider.css" />
     <Content Include="js\flexslider.min.js" />
     <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="Produtos.aspx" />
-    <Content Include="Representantes.aspx" />
+    <Content Include="Admin\Representantes.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -128,11 +130,11 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExibirExcecoes.aspx.cs">
+    <Compile Include="Admin\ExibirExcecoes.aspx.cs">
       <DependentUpon>ExibirExcecoes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExibirExcecoes.aspx.designer.cs">
+    <Compile Include="Admin\ExibirExcecoes.aspx.designer.cs">
       <DependentUpon>ExibirExcecoes.aspx</DependentUpon>
     </Compile>
     <Compile Include="FaleConosco.aspx.cs">
@@ -141,6 +143,20 @@
     </Compile>
     <Compile Include="FaleConosco.aspx.designer.cs">
       <DependentUpon>FaleConosco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Page.Master.cs">
       <DependentUpon>Page.Master</DependentUpon>
@@ -157,11 +173,11 @@
       <DependentUpon>Produtos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Representantes.aspx.cs">
+    <Compile Include="Admin\Representantes.aspx.cs">
       <DependentUpon>Representantes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Representantes.aspx.designer.cs">
+    <Compile Include="Admin\Representantes.aspx.designer.cs">
       <DependentUpon>Representantes.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
