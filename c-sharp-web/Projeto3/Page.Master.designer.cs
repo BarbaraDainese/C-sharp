@@ -40,6 +40,15 @@ namespace Projeto3 {
         protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
+        /// Controle home.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor home;
+        
+        /// <summary>
         /// Controle Excecoes.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace Projeto3 {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor representantes;
+        
+        /// <summary>
+        /// Controle fale.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor fale;
         
         /// <summary>
         /// Controle Entrar.

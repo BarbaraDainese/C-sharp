@@ -35,12 +35,12 @@
 
                     <!-- MENU -->
                     <div class="barra-menu">
-                        <a href="Default.aspx">HOME</a>
+                        <a runat="server" id="home" href="~/Default.aspx">HOME</a>
                         <a id="Excecoes" visible="false" runat="server" href="~/Admin/ExibirExcecoes.aspx">EXIBIR EXCEÇÕES</a>
                         <a runat="server" id="representantes"  visible="false" href="~/Admin/Representantes.aspx">REPRESENTANTES</a>
-                        <a href="FaleConosco.aspx">CONTATO</a>
-                        <a runat="server" id="Entrar" visible="true" href="Login.aspx">ENTRAR</a>
-                        <a runat="server" id="Sair" visible="false" href="Logout.aspx">SAIR</a>
+                        <a runat="server" id="fale" href="~/FaleConosco.aspx">CONTATO</a>
+                        <a runat="server" id="Entrar" visible="true" href="~/Login.aspx">ENTRAR</a>
+                        <a runat="server" id="Sair" visible="false" href="~/Logout.aspx">SAIR</a>
                     </div>
                 </div>
             </div>

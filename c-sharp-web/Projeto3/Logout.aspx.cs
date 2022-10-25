@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security;
 
 namespace Projeto3
 {
@@ -11,7 +12,8 @@ namespace Projeto3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session.Clear();
+            FormsAuthentication.SignOut();
         }
     }
 }
